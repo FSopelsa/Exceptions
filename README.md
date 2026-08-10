@@ -7,13 +7,6 @@ using the exception-handling concepts introduced in
 ## Implemented exercises
 
 1. `DivisionProgram` catches `ArithmeticException` when dividing by zero.
-2. `RangeProgram` catches `InputMismatchException` and uses the checked custom
-   exception `OutOfRangeException` for values outside 1–100.
-3. `BankAccount` uses `throw` and `throws` with the checked custom exception
-   `InsufficientBalanceException`.
-4. `FileNumberProgram` uses an outer file-handling `try-catch` and an inner
-   parsing `try-catch` for `NoSuchFileException`, `IOException`, and
-   `NumberFormatException`.
 
 ## Build and test
 
@@ -31,14 +24,5 @@ root:
 
 ```powershell
 java -cp target/classes se.lexicon.exceptions.exercise1.DivisionProgram
-java -cp target/classes se.lexicon.exceptions.exercise2.RangeProgram
-java -cp target/classes se.lexicon.exceptions.exercise3.BankingProgram
-java -cp target/classes se.lexicon.exceptions.exercise4.FileNumberProgram
 ```
 
-Exercise 4 reads `data/numbers.txt` by default. To use another file, pass its
-path as the first argument:
-
-```powershell
-java -cp target/classes se.lexicon.exceptions.exercise4.FileNumberProgram path\to\numbers.txt
-```
