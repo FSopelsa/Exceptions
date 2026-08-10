@@ -12,6 +12,7 @@ Solutions for Exercises 1-8 in `Exception_Exercises.md`, using the concepts in
    `InsufficientBalanceException`.
 4. `FileNumberProgram` uses nested `try-catch` blocks for file and parsing
    errors.
+5. `DivisionWithFinallyProgram` always runs a `finally` block.
 
 ## Build and test
 
@@ -27,6 +28,7 @@ java -cp target/classes se.lexicon.exceptions.exercise1.DivisionProgram
 java -cp target/classes se.lexicon.exceptions.exercise2.RangeProgram
 java -cp target/classes se.lexicon.exceptions.exercise3.BankingProgram
 java -cp target/classes se.lexicon.exceptions.exercise4.FileNumberProgram
+java -cp target/classes se.lexicon.exceptions.exercise5.DivisionWithFinallyProgram
 ```
 
 Exercise 4 reads `data/numbers.txt` by default. Pass a file path as the first argument to change path.
