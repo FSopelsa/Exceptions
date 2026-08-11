@@ -15,6 +15,7 @@ Solutions for Exercises 1-8 in `Exception_Exercises.md`, using the concepts in
 5. `DivisionWithFinallyProgram` always runs a `finally` block.
 6. `EmailValidatorProgram` throws `IllegalArgumentException` for invalid email.
 7. `NameList` uses `NameNotFoundException` and `DuplicateNameException`.
+8. `TextFileProgram` writes text with try-with-resources.
 
 ## Build and test
 
@@ -33,6 +34,9 @@ java -cp target/classes se.lexicon.exceptions.exercise4.FileNumberProgram
 java -cp target/classes se.lexicon.exceptions.exercise5.DivisionWithFinallyProgram
 java -cp target/classes se.lexicon.exceptions.exercise6.EmailValidatorProgram
 java -cp target/classes se.lexicon.exceptions.exercise7.NameListProgram
+java -cp target/classes se.lexicon.exceptions.exercise8.TextFileProgram
 ```
 
-Exercise 4 reads `data/numbers.txt` by default. Pass a file path as the first argument to change path.
+Exercise 4 reads `data/numbers.txt` by default. Exercise 8 writes to
+`data/output.txt` by default. Pass a file path as the first argument to change
+either path.
